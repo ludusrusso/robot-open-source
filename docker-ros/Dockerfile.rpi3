@@ -1,0 +1,5 @@
+FROM arm32v7/ros:kinetic-ros-base
+COPY ./qemu-arm-static /usr/bin/qemu-arm-static
+
+COPY ./scripts /scripts
+COPY ./start.bash /start.bash

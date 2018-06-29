@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ros:
+    image: ludusrusso/ros-docker-example
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+  ros-rpi3:
+    image: ludusrusso/ros-docker-example:rpi3
+    build: 
+      context: .
+      dockerfile: ./Dockerfile.rpi3
+
